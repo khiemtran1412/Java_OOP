@@ -16,12 +16,16 @@ public class SinhVien {
         nameSV = input.nextLine();
         System.out.println("Nhập thông tin năm sinh viên:");
         yearSV = input.nextInt();
+        input.nextLine();
         System.out.println("Nhập thông tin địa chỉ sinh viên:");
         addressSV = input.nextLine();
         System.out.println("Nhập thông tin điểm sinh viên");
         pointSV = input.nextFloat();
     }
 
+    public void outputInforSV() {
+        System.out.println("Sinh viên tên:" +" "+ nameSV+" " + "năm sinh:" +" "+ yearSV +" "+ "địa chỉ:" +" " +addressSV +" "+ "điểm:"+" " + pointSV);
+    }
 
     public String getNameSV() {
         return nameSV;
